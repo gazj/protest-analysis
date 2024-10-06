@@ -4,8 +4,110 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Protest the Hero - Dual Guitar Analysis</title>
+    <style type="text/css">
+        #intro{
+            margin-top:20px;
+        }
+        .audio-sample-container{
+            background-color:lightgrey;
+            border:1px solid darkgrey;
+            width:fit-content;
+        }
+    </style>
 </head>
 <body>
-    <div>It works! 🎸</div>
+    <div id="intro">
+        <p>This page compares an audio clip from Protest the Hero's "Bone Marrow" with a song I wrote, comically named "Procure the Dinero" (a.k.a. <em>Get Money</em>).</p>
+        <p>The goal is to more closely examine the frequencies involved and see if I can identify contributing factors to tone, harmony, etc.</p>
+    </div>
+    <p><strong>Bone Marrow - Outro</strong></p>
+    <div class="audio-sample-container">
+        <div>
+            <figure>
+              <figcaption>Both Guitars:</figcaption>
+              <audio controls src="media/audio/BoneMarrow_Outro_Both_Guitars.mp3"></audio>
+            </figure>
+        </div>
+        <div>
+            <figure>
+              <figcaption>Guitar 1:</figcaption>
+              <audio controls src="media/audio/BoneMarrow_Outro_Guitar1.mp3"></audio>
+            </figure>
+        </div>
+        <div>
+            <figure>
+              <figcaption>Guitar 2:</figcaption>
+              <audio controls src="media/audio/BoneMarrow_Outro_Guitar1.mp3"></audio>
+            </figure>
+        </div>
+    </div>
+    <p>The first two images below show a spectrogram overview of 100-1100Hz and 100-3000Hz. There are quite a bit of overtones present, as well as a distinct representation of the base frequencies of the perceived melody.</p>
+    <p>Note: Deleting either the overtones <strong>or</strong> the base frequencies has a significant impact on the quality of the guitar tone, which suggests that the overtones are not solely the result of any added effects such as reverberation or detuning.</p>
+    <a href="media/images/BoneMarrow_Outro_Spectrogram_100-1100.png">
+        <img src="media/images/BoneMarrow_Outro_Spectrogram_100-1100.png" height="360" width="640">
+    </a>
+    <a href="media/images/BoneMarrow_Outro_Spectrogram_100-3000.png">
+        <img src="media/images/BoneMarrow_Outro_Spectrogram_100-3000.png" height="360" width="640">
+    </a>
+    <p>In the next two images, sample notes from the measure are examined. They appear to be approximately A5 and E3, a perfect 5th apart.<br>Does the entire melody maintain this exact interval between the two instruments, or does it vary from note to note?<br>Also note that the base frequencies (around the 300-500Hz region) are far less crisp and distinct, which probably contributes to a sloppier sound.</p>
+    <a href="media/images/BoneMarrow_Outro_Spectrogram_880Hz_A5_Circled.png">
+        <img src="media/images/BoneMarrow_Outro_Spectrogram_880Hz_A5_Circled.png" height="360" width="640">
+    </a>
+    <a href="media/images/BoneMarrow_Outro_Spectrogram_659Hz_E5_Circled.png">
+        <img src="media/images/BoneMarrow_Outro_Spectrogram_659Hz_E5_Circled.png" height="360" width="640">
+    </a>
+    <hr>
+    <p><strong>Procure The Dinero</strong></p>
+    <div class="audio-sample-container">
+        <div>
+            <figure>
+              <figcaption>Both Guitars:</figcaption>
+              <audio controls src="media/audio/ProcureTheDinero_Both_Guitars.mp3"></audio>
+            </figure>
+        </div>
+        <div>
+            <figure>
+              <figcaption>Guitar 1:</figcaption>
+              <audio controls src="media/audio/ProcureTheDinero_Guitar1.mp3"></audio>
+            </figure>
+        </div>
+
+        <div>
+            <figure>
+              <figcaption>Guitar 2:</figcaption>
+              <audio controls src="media/audio/ProcureTheDinero_Guitar2.mp3"></audio>
+            </figure>
+        </div>
+        <div>
+            <figure>
+              <figcaption>All Instruments:</figcaption>
+              <audio controls src="media/audio/ProcureTheDinero_All_Instruments.mp3"></audio>
+            </figure>
+        </div>
+    </div>
+    <p>Just as with Bone Marrow, the first two images show a spectrogram overview of 100-1100Hz and 100-3000Hz. Compared to Bone Marrow, it looks as though there are significantly less amplitude in the overtones, and also somewhat less in the way of subharmonics.<br>To what extent do these contribute to the perceived guitar tone?</p>
+    <a href="media/images/ProcureTheDinero_Spectrogram_100-1100.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_100-1100.png" height="360" width="640">
+    </a>
+    <a href="media/images/ProcureTheDinero_Spectrogram_100-3000.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_100-3000.png" height="360" width="640">
+    </a>
+    <p>In the next two images, sample notes from the first half of the measure are examined, and while not super in-tune, they appear to be approximately G4 and B3, a 6th apart.<br>Also note that the base frequencies (around the 300-500Hz region) are far less crisp and distinct, which probably contributes to a sloppier sound.</p>
+    <a href="media/images/ProcureTheDinero_Spectrogram_382Hz_G4.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_382Hz_G4.png" height="360" width="640">
+    </a>
+    <a href="media/images/ProcureTheDinero_Spectrogram_246Hz_B3.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_246Hz_B3.png" height="360" width="640">
+    </a>
+    <p>Similar to the above images, the next two examine a pair of notes from the second half of the measure. They appear to be B3 and B4 — one octave apart. This sounds much better, and smoother, even though they are no more crisp or distinct than in the previous examples.<br>I suspect that the interval difference is partly responsibly for failing to replicate the sound from Bone Marrow.</p>
+    <a href="media/images/ProcureTheDinero_Spectrogram_501Hz_B4.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_501Hz_B4.png" height="360" width="640">
+    </a>
+    <a href="media/images/ProcureTheDinero_Spectrogram_247Hz_B3.png">
+        <img src="media/images/ProcureTheDinero_Spectrogram_247Hz_B3.png" height="360" width="640">
+    </a>
+    <hr>
+    <p>For reference, here is a chart matching frequencies to music notes.</p>
+    <img src="media/images/NoteChart.png">
 </body>
 </html>
